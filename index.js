@@ -1,15 +1,15 @@
 
 try {
-  var clone = require('clone');
-  var each = require('each');
-  var type = require('type');
-} catch (e) {
-  var clone = require('clone-component');
-  var each = require('each-component');
+  var clone = require('component-clone');
+  var each = require('component-each');
   var type = require('component-type');
+} catch (e) {
+  // commented out by npm-component: var clone = require('clone-component');
+  // commented out by npm-component: var each = require('each-component');
+  // commented out by npm-component: var type = require('component-type');
 }
 
-var is = require('is');
+var is = require('manuelstofer-is');
 
 /**
  * Plugin.
